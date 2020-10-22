@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6709126100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "execute all the information from actor table",
+        "description": "",
+        "id": "database-sql-query-feature;execute-all-the-information-from-actor-table",
+        "after": [
+          {
+            "result": {
+              "duration": 1901173400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User Connect to PostgreSQL",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "user sends \"select * from public.actor\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user should get all information from that table",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@sqlquery"
+          }
+        ]
+      }
+    ],
+    "name": "Database SQL query feature",
+    "description": "",
+    "id": "database-sql-query-feature",
+    "keyword": "Feature",
+    "uri": "Features/Database.feature"
+  }
+]
